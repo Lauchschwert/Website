@@ -62,18 +62,28 @@ table tr th {
     height: 250px;
 }
 
-.d_server {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-}
 
 .d_link {
-    padding-left: 265px;
+    padding-left: 250px;
     font-size: 20px;
     color: rgba(204, 0, 255);
 }
 
 .dc {
     padding-right: 115px;
+}
+
+@media screen and (max-width: 600px)
+{
+    .avatar {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        padding: 8px;
+    }
+    .d_link {
+        padding-left: 150px;
+        font-size: 20px;
+        color: rgba(204, 0, 255);
+    }
 }
