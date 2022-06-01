@@ -73,14 +73,14 @@ table tr th {
     padding-right: 115px;
 }
 
-@media screen and (max-width: 600px)
-{
+@media screen and (max-width: 600px) {
     .avatar {
         border-radius: 50%;
         width: 150px;
         height: 150px;
         padding: 8px;
     }
+
     .d_link {
         padding-left: 150px;
         font-size: 20px;
