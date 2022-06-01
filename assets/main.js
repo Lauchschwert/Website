@@ -6,7 +6,8 @@ var a = 0;
 function writetitle(txt) {
 
     if (a == 0) {
-        document.getElementsByTagName("title")[0].innerHTML = "L";
+        
+        document.getElementsByTagName("title")[0].innerHTML = txt.charAt(0);
         a = 1;
     }
     if (i < txt.length) {
@@ -27,7 +28,7 @@ function writetitle(txt) {
 }
 
 function deletetitle(txt, txt2) {
-    if (i > 1) {
+    if (i > 0) {
         i--;
         txt = txt.slice(0, -1);
         document.getElementsByTagName("title")[0].innerHTML = txt;
@@ -37,17 +38,10 @@ function deletetitle(txt, txt2) {
     } else {
         i = 1;
         a = 0;
-        document.title = 'L';
+        document.getElementsByTagName("title")[0].innerHTML = txt.charAt(0);
         setTimeout(() => {
             writetitle(txt2);
         }, 200);
     }
 }
 
-function wait(ms) {
-    var start = new Date().getTime();
-    var end = start;
-    while (end < start + ms) {
-        end = new Date().getTime();
-    }
-}

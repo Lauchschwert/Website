@@ -73,6 +73,7 @@ table tr th {
     padding-right: 115px;
 }
 
+
 @media screen and (max-width: 600px) {
     .avatar {
         border-radius: 50%;
@@ -85,5 +86,11 @@ table tr th {
         padding-left: 150px;
         font-size: 20px;
         color: rgba(204, 0, 255);
+    }
+    nav a
+    {
+        text-align: center;
+        padding: 10px 0px;
+        font-size: 1rem;
     }
 }
