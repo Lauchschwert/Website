@@ -63,14 +63,9 @@ table tr th {
 }
 
 
-.d_link {
-    padding-left: 250px;
+.dc_link {
     font-size: 20px;
     color: rgba(204, 0, 255);
-}
-
-.dc {
-    padding-right: 115px;
 }
 
 
