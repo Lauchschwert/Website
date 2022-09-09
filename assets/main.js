@@ -43,5 +43,12 @@ function deletetitle(txt, txt2) {
             writetitle(txt2);
         }, 200);
     }
+
+
+
+}
+
+function cBgButton(lightmode, darkmode) {
+    if 
 }
 
