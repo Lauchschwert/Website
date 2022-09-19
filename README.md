@@ -7,4 +7,4 @@ Code Cleanup and fixes by [@anditv21](https://github.com/anditv21) and [@saintly
 
 ## Preview
 
-https://lauchschwert.xyz
+<a href="https://lauchschwert.xyz" target="_blank">Lauchschwert.xyz</a>
