@@ -9,3 +9,5 @@ Code Cleanup and fixes by [@anditv21](https://github.com/anditv21) and [@saintly
 ## Preview
 
 <a href="https://lauchschwert.xyz" target="_blank">Lauchschwert.xyz</a>
+<h2 align=center>Screenshot preview:</h2>
+<img src="/assets/img/img_preview.jpg">
