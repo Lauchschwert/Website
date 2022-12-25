@@ -28,7 +28,7 @@ function writetitle(txt) {
 }
 
 function deletetitle(txt, txt2) {
-    if (i > 0) {
+    if (i > 1) {
         i--;
         txt = txt.slice(0, -1);
         document.getElementsByTagName("title")[0].innerHTML = txt;
@@ -49,6 +49,6 @@ function deletetitle(txt, txt2) {
 }
 
 function cBgButton(lightmode, darkmode) {
-    if 
+
 }
 
