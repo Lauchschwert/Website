@@ -36,7 +36,7 @@ div a:hover {
 }
 
 div.credits {
-  background-color: rgb(61, 58, 58);
+  background-color:rgb(53, 53, 53);
   padding: 50px;
   border-radius: 15px;
 }
@@ -47,7 +47,7 @@ div.credits a {
 }
 
 .topnav {
-  background-color: rgb(61, 58, 58);
+  background-color: rgb(53, 53, 53);
   overflow: hidden;
   padding-bottom: 22px;
   border-radius: 15px;
@@ -58,7 +58,7 @@ div.credits a {
 }
 
 .topnav a.active {
-  background-color: rgba(80, 0, 27, 0.918);
+  background-color: rgb(80, 0, 27);
   color: aqua;
   cursor: default;
   border-radius: 35px;
@@ -86,7 +86,7 @@ nav a:hover {
 
 nav a {
   transition: 1s;
-  color: rgba(206, 65, 0, 0.589);
+  color: rgb(206, 65, 0);
   padding: 8px;
 }
 
@@ -97,7 +97,7 @@ p {
 
 h1 {
   text-align: center;
-  color: rgba(179, 0, 59, 0.918);
+  color: rgb(179, 0, 59);
   font-size: 45px;
 }
 
@@ -113,7 +113,7 @@ table tr th {
 
 .dc_link {
   font-size: 20px;
-  color: rgba(204, 0, 255);
+  color: rgb(204, 0, 255);
 }
 
 @media screen and (max-width: 600px) {
@@ -127,7 +127,7 @@ table tr th {
   .d_link {
     padding-left: 150px;
     font-size: 20px;
-    color: rgba(204, 0, 255);
+    color: rgb(204, 0, 255);
   }
   nav a {
     text-align: center;
@@ -135,5 +135,8 @@ table tr th {
     font-size: 1rem;
   }
   
+cursor::shadow{
+  box-shadow: 50px;
+}
 
 }
