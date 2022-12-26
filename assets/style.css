@@ -100,11 +100,11 @@ table tr th {
 }
 .dc_img:hover
 {
-  background-color: rgb(80, 0, 27);
-  color: aqua;
   cursor: default;
-  font-size: 20px;
   transform: scale(1.1);
+}
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+  display: none;
 }
 @media screen and (max-width: 600px) {
   .avatar {
@@ -123,7 +123,12 @@ table tr th {
       padding: 10px 0px;
       font-size: 1rem;
  }
-  img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
-     display: none;
- }
+}
+
+b:hover
+{
+ cursor: default;
+ font-size: 25px;
+ transform: scale(1.1);
+ color:aqua;
 }
