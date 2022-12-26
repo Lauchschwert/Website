@@ -86,14 +86,25 @@ h1 {
 table tr th {
   font-size: 22px;
 }
-.avatar {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-}
+
 .dc_link {
   font-size: 20px;
   color: rgb(204, 0, 255);
+}
+.dc_img
+{
+  border-radius: 50%;
+  transition: transform .2s;
+  width: 250px;
+  height: 250px;
+}
+.dc_img:hover
+{
+  background-color: rgb(80, 0, 27);
+  color: aqua;
+  cursor: default;
+  font-size: 20px;
+  transform: scale(1.1);
 }
 @media screen and (max-width: 600px) {
   .avatar {
