@@ -1,6 +1,18 @@
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: white;
+  cursor: default;
 }
 body {
   background: rgb(32, 32, 32);
@@ -63,7 +75,6 @@ div.credits a {
 .topnav:hover{
   box-shadow: 0px 18px 30px 15px;
   transition-duration: .2s;
-  padding-top: 8px;
   transform: scale(1.01);
   color: rgb(100, 30, 85);
   border-style: groove;
@@ -72,29 +83,30 @@ div.credits a {
 }
 .topnav a {
   float: left;
+  font-size: 23px;
 }
 .topnav a.active {
   color: rgb(0 111 175);
   cursor: default;
-  background-color: rgb(48, 6, 20);
+  background-color: rgb(48, 6, 41);
   border-radius: 20px;
 }
 .topnav a.active:hover {
   text-decoration: none;
-  background-color: rgb(80, 0, 27);
+  background-color: rgb(131, 7, 112);
   border-radius: 40px;
   color: aqua;
 }
 .topnav a:hover {
   text-decoration: underline;
-  transition-duration: .5s;
+  transition-duration: .2s;
 }
 nav .navigation {
   height: 100px;
 }
 nav a:hover {
   background-color: rgb(59, 59, 59);
-  font-size: 25px;
+  font-size: 24px;
   transition-duration: 0.3s;
   color: rgb(255, 102, 0);
 }
@@ -132,9 +144,6 @@ table tr th {
   cursor: pointer;
   transform: scale(1.1);
 }
-img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
-  display: none;
-}
 @media screen and (max-width: 600px) {
   .avatar {
       border-radius: 50%;
@@ -153,12 +162,16 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
       font-size: 1rem;
  }
 }
-
+b {
+  transition-duration: .2s;
+  cursor: pointer;
+}
 b:hover
 {
- font-size: 25px;
- transform: scale(1.1);
- color:aqua;
+  font-size: 25px;
+  transform: scale(1.1);
+  color:aqua;
+  transition-duration: .2s;
 }
 
 .bckbtn {
@@ -185,4 +198,28 @@ img:hover{
 .btmhr{
   opacity: 25%;
   width: 900px;
+}
+.container {
+  animation: transitionIn .75s;
+}
+a{
+  cursor: pointer;
+}
+.clock {
+  border-style: solid;
+  border-width: 1px;
+  position: fixed;
+  right: 2%;
+  top: .8%;
+  border-radius: 10px;
+  padding: 10px;
+  transition-duration: .2s;
+}
+.clock:hover{
+  background-color: rgb(36, 36, 36);
+  box-shadow: 0px 2px 16px 2px;
+  border-color: black;
+  transition-duration: .2s;
+  color: rgb(204, 0, 255);
+  transform: scale(1.04);
 }
