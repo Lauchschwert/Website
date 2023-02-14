@@ -63,6 +63,12 @@ function update_clock() {
   if (seconds < 10) {
       seconds = "0" + seconds;
   }
+  if (hours < 12) {
+    minutes = minutes + " am";
+  }
+  if (hours > 12) {
+    minutes = minutes + " pm";
+  }
 
   var clock_element = document.getElementById("clock");
 
