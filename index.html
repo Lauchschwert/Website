@@ -8,19 +8,26 @@
     <title>Home | Lauchschwert.xyz</title>
     <script type="text/javascript" src="assets/main.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <meta content="Lauchschwert" property="og:title" />
+    <meta content="A simple Website about me." property="og:description" />
+    <meta content="https://i.imgur.com/NNRcmwl.jpeg" property="og:url"/>
+    <meta content="https://lauchschwert.xyz" property="og:url" />
+    <meta content="https://cdn.discordapp.com/avatars/771670074405945375/c81e7bf803afef44b8078df42c9c6243.png" property="og:image" />
+    <meta content="#0E6400" data-react-helmet="true" name="theme-color" />
   </head>
 
-  <body onload="writeTitle('Home | Lauchschwert.xyz')">
+  <body onload="writeTitle('Home | Lauchschwert.xyz')" class="darkmode" id="body">
     <center>
       <div class="topnav">
         <ul>
-        <a class="active" href="/">Home</a>
-        <a href="aboutme">About me</a>
-        <a href="contactme">Contact me</a>
-        <a href="socials">Other stuff</a>
-        <a href="github.html">Github</a>
+          <a class="active" href="/">Home</a>
+          <a href="aboutme">About me</a>
+          <a href="contactme">Contact me</a>
+          <a href="github.html">Github</a>
+          <a href="socials">Other Stuff</a>
+          <button id="darkandlight" onclick="lightmode()" class="darkandlight"><img src="assets/img/darkmode.png"></button>
         </ul>
-    </div>
+      </div>
     </center>
     <div class="container">
       <h2 align="center" class="clock" id="clock"></h2>
@@ -58,9 +65,4 @@
       </div>  
     </div>
   </body>
-  <meta content="Lauchschwert" property="og:title" />
-  <meta content="A simple Website about me." property="og:description" />
-  <meta content="https://lauchschwert.xyz" property="og:url" />
-  <meta content="https://cdn.discordapp.com/avatars/771670074405945375/c81e7bf803afef44b8078df42c9c6243.png" property="og:image" />
-  <meta content="#0E6400" data-react-helmet="true" name="theme-color" />
 </html>

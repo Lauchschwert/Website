@@ -11,7 +11,6 @@
 }
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: white;
   cursor: default;
 }
 body {
@@ -19,6 +18,7 @@ body {
   color: rgb(200, 23, 245);
   padding: 10px;
   font-size: 20px;
+  color: white;
 }
 a.tl {
   color: rgb(0, 111, 175);
@@ -26,7 +26,6 @@ a.tl {
 }
 a.tl:hover {
   color: aqua;
-  transition: .5s;
   transition-duration: .2s;
 }
 div a {
@@ -38,7 +37,7 @@ div a {
 }
 div a:hover {
   transition-duration: 0.2s;
-  font-size: 25px;
+  font-size: 20px;
   color: aqua;
 }
 div.credits {
@@ -100,6 +99,7 @@ div.credits a {
 .topnav a:hover {
   text-decoration: underline;
   transition-duration: .2s;
+  font-size: 25px;
 }
 nav .navigation {
   height: 100px;
@@ -276,4 +276,27 @@ a{
 }
 .webimg {
   border-radius: 32px;
+}
+.lightmode {
+ background-color: rgb(235, 235, 235);
+ color: black;
+ transition-duration: 3s;
+}
+.darkmode {
+  background-color: rgb(32, 32 , 32);
+  color: white;
+  transition-duration: 3s;
+}
+.darkandlight{
+  background: transparent;
+  border: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  border-color: black;
+  transition-duration: .2s;
+}
+.darkandlight:hover{
+  transition-duration: .2s;
+  transform: scale(1.15);
+  box-shadow: 0px 0px 12px 1px white;
 }

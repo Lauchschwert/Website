@@ -49,8 +49,19 @@ function setClipboard(value) {
   document.body.removeChild(tempInput);
 }
 
-function cBgButton(lightmode, darkmode) {
-  // TODO: Add implementation for cBgButton function
+function lightmode() {
+  if (document.getElementById("body").classList.contains('darkmode')) {
+    document.getElementById("body").classList.remove('darkmode');
+    document.getElementById("body").classList.add('lightmode');
+    document.getElementById("darkandlight").onclick = darkmode;
+  }
+}
+function darkmode() {
+  if (document.getElementById("body").classList.contains('lightmode')) {
+    document.getElementById("body").classList.remove('lightmode');
+    document.getElementById("body").classList.add('darkmode');
+    document.getElementById("darkandlight").onclick = lightmode;
+  }
 }
 
 function update_clock() {
