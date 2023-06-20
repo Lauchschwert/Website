@@ -3,127 +3,115 @@
     opacity: 0;
     transform: rotateX(-10deg);
   }
-
   to {
     opacity: 1;
     transform: rotateX(0deg);
   }
 }
+
 * {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   cursor: default;
 }
+
 body {
   background: rgb(32, 32, 32);
-  color: rgb(200, 23, 245);
+  color: white;
   padding: 10px;
   font-size: 20px;
-  color: white;
 }
-a.tl {
+
+a.tl,
+div a,
+.topnav a,
+nav a,
+.repo {
   color: rgb(0, 111, 175);
-  transition-duration: .2s;
+  transition: color 0.2s;
 }
-a.tl:hover {
-  color: aqua;
-  transition-duration: .2s;
-}
-div a {
-  color: rgb(0, 111, 175);
-  padding: 12px;
-  font-size: 20px;
-  transition: .2s;
-  text-decoration: none;
-}
-div a:hover {
-  transition-duration: 0.2s;
-  font-size: 20px;
+
+a.tl:hover,
+div a:hover,
+.topnav a.active:hover,
+.repo:hover {
   color: aqua;
 }
-div.credits {
+
+div.credits,
+.topnav {
   background-color: rgb(53, 53, 53);
   overflow: hidden;
-  padding:50px ;
+  padding: 50px;
   border-radius: 15px;
   box-shadow: 0px 18px 20px 10px;
   color: black;
-  transition-duration: .2s;
+  transition: box-shadow 0.2s, color 0.2s;
 }
-div.credits:hover{
+
+div.credits:hover {
   box-shadow: 0px 18px 20px 10px;
   color: rgb(0, 0, 0);
-  transition-duration: .2s;
+  transition-duration: 0.2s;
   color: rgb(100, 30, 85);
   border-style: groove;
   border-width: 1px;
   border-color: rgb(255, 0, 212);
   padding: 48px;
 }
-div.credits a {
-  font-size: 17px;
-}
-.topnav {
-  background-color: rgb(53, 53, 53);
-  overflow: hidden;
-  padding-bottom: 22px;
-  border-radius: 15px;
-  box-shadow: 0px 18px 20px 10px;
-  color: black;
-  transition-duration: .2s;
-}
-.topnav:hover{
+
+.topnav:hover {
   box-shadow: 0px 18px 30px 15px;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
   transform: scale(1.01);
   color: rgb(100, 30, 85);
   border-style: groove;
   border-width: 1px;
   border-color: rgb(255, 0, 212);
 }
+
 .topnav a {
   float: left;
   font-size: 23px;
+  transition: text-decoration 0.2s, font-size 0.2s;
 }
+
 .topnav a.active {
-  color: rgb(0 111 175);
+  color: rgb(0, 111, 175);
   cursor: default;
   background-color: rgb(48, 6, 41);
   border-radius: 20px;
 }
+
 .topnav a.active:hover {
   text-decoration: none;
   background-color: rgb(131, 7, 112);
   border-radius: 40px;
   color: aqua;
 }
-.topnav a:hover {
-  text-decoration: underline;
-  transition-duration: .2s;
-  font-size: 25px;
-}
+
 nav .navigation {
   height: 100px;
 }
+
 nav a:hover {
   background-color: rgb(59, 59, 59);
   font-size: 24px;
   transition-duration: 0.3s;
   color: rgb(255, 102, 0);
 }
-nav a {
-  transition: 1s;
-  color: rgb(206, 65, 0);
-  padding: 8px;
-}
+
 p {
   text-align: center;
   font-size: 20px;
 }
+
 h1 {
   text-align: center;
   color: rgb(179, 0, 59);
   font-size: 45px;
 }
+
 table tr th {
   font-size: 22px;
 }
@@ -132,97 +120,64 @@ table tr th {
   font-size: 20px;
   color: rgb(204, 0, 255);
 }
-.dc_img
-{
-  border-radius: 50%;
-  transition: transform .2s;
-  width: 250px;
-  height: 250px;
-  text-decoration: underline;
-}
-.dc_img:hover
-{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-@media screen and (max-width: 600px) {
-  .avatar {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      padding: 8px;
- }
-  .d_link {
-      padding-left: 150px;
-      font-size: 20px;
-      color: rgb(204, 0, 255);
- }
-  nav a {
-      text-align: center;
-      padding: 10px 0px;
-      font-size: 1rem;
- }
-}
-b {
-  transition-duration: .2s;
-  cursor: pointer;
-}
-b:hover
-{
-  font-size: 25px;
-  transform: scale(1.1);
-  color:aqua;
-  transition-duration: .2s;
-}
 
 .bckbtn {
   font-size: 32px;
   background-color: rgb(44, 46, 48);
   border-radius: 25px;
-  padding-top: 2px;
-  transition-duration: .2s;
+  margin-top: 2px;
+  transition-duration: 0.2s;
 }
+
 .bckbtn:hover {
   background-color: rgb(66, 69, 71);
-  transition-duration: .2s;
+  transition-duration: 0.2s;
   font-size: 32px;
 }
-img{
+
+img {
   box-shadow: 0px 0px 0px 0px;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
 }
-img:hover{
+
+img:hover {
   box-shadow: 0px 0px 0px 0px;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
 }
-.btmhr{
+
+.btmhr {
   opacity: 25%;
   width: 900px;
 }
+
 .container {
-  animation: transitionIn .75s;
+  animation: transitionIn 0.75s;
 }
-a{
+
+a {
   cursor: pointer;
 }
+
 .clock {
   border-style: solid;
   border-width: 1px;
   position: fixed;
   right: 2%;
-  top: .8%;
+  top: 0.8%;
   border-radius: 10px;
-  padding: 10px;
-  transition-duration: .2s;
+  margin: 10px;
+  transition-duration: 0.2s;
 }
-.clock:hover{
+
+.clock:hover {
   background-color: rgb(36, 36, 36);
   box-shadow: 0px 2px 16px 2px;
   border-color: rgb(209, 7, 175);
-  transition-duration: .2s;
+  transition-duration: 0.2s;
   color: rgb(204, 0, 255);
   transform: scale(1.04);
 }
+
 .ghhr {
   width: 950px;
   border-top: 1px solid #fc03c6;
@@ -230,16 +185,19 @@ a{
   opacity: 100%;
   box-shadow: 0px 0px 12px 5px #b900aa;
 }
+
 .gh4 {
   color: #fc03db;
   text-shadow: 0px 0px 10px #fc03be;
   position: fixed;
   right: 47%;
 }
+
 .ghol {
   display: flex;
   list-style: none;
 }
+
 .ghcard {
   border-style: solid;
   border-width: 1px;
@@ -248,55 +206,98 @@ a{
   width: 400px;
   height: 145px;
 }
+
 .repo {
   font-size: 17px;
   position: fixed;
   color: rgb(0, 164, 214);
   font-weight: bold;
 }
-.repodescr{
+
+.repodescr {
   font-size: 11px;
   opacity: 60%;
   position: fixed;
-  padding-top: 55px;
-  padding-left: 8px;
+  margin-top: 55px;
+  margin-left: 8px;
 }
+
 .repo:hover {
   text-decoration: underline;
 }
+
 .webcode {
   font-size: small;
   text-align: left;
   text-decoration: underline;
-  padding-left: 14px;
+  margin-left: 14px;
 }
+
 .codeimgs {
   display: flex;
-  padding-left: 10px;
+  margin-left: 10px;
 }
+
 .webimg {
   border-radius: 32px;
 }
+
 .lightmode {
- background-color: rgb(235, 235, 235);
- color: black;
- transition-duration: 3s;
+  background-color: rgb(235, 235, 235);
+  color: black;
+  transition-duration: 3s;
 }
+
 .darkmode {
-  background-color: rgb(32, 32 , 32);
+  background-color: rgb(32, 32, 32);
   color: white;
   transition-duration: 3s;
 }
-.darkandlight{
+
+.darkandlight {
   background: transparent;
   border: solid;
   border-width: 2px;
   border-radius: 50%;
   border-color: black;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
 }
-.darkandlight:hover{
-  transition-duration: .2s;
+
+.darkandlight:hover {
+  transition-duration: 0.2s;
   transform: scale(1.15);
-  box-shadow: 0px 0px 12px 1px white;
+  box-shadow: 0px 0px 20px 4px #ff00e6;
+  border-color: #fc03db;
+}
+
+.backlink {
+  margin-top: 55px;
+  font-size: 19px;
+  position: fixed;
+  color: rgb(0, 111, 175);
+}
+
+.backlink:hover {
+  color: #fc03db;
+  text-decoration: underline;
+}
+
+.sitefooter {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.sitefooter a {
+  color: rgb(0, 111, 175);
+}
+
+.sitefooter a:hover {
+  color: aqua;
+}
+
+@media only screen and (max-width: 700px) {
+  .topnav a {
+    float: none;
+  }
 }
